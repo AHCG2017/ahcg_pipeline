@@ -46,9 +46,7 @@ git commit –m ‘comments’
 git push origin master
 ```
 
-#Extract reads mapping from a region of interest
-
-####Extract reads mapping to BRCA1 from NA12878 HiSeq Exome dataset
+#Extract reads mapping to BRCA1 from NA12878 HiSeq Exome dataset
 
 1.Download the NA12878 HiSeq Exome datasets.
 
@@ -72,10 +70,5 @@ samtools view -L BRCA1.bed -b -o output.bam NA12878.bam
 4.Use bedtools to convert the bam file to a fastq file (We now extract the reads aligning to the region).
 
 ```{sh}
-bedtools bamtofastq -i output.bam -fq BRCA1_r1.fastq -fq2 BRCA1_r2.fastq
-```
-5.Run the pipeline to find the variants.
-
-```{sh}
-python3 ahcg_pipeline.py -t ../pipeline/Trimmomatic-0.36/trimmomatic-0.36.jar -b  ../pipeline/bowtie2-2.2.9/bowtie2 -p ../pipeline/picard.jar -g ../pipeline/GenomeAnalysisTK.jar -i ../files/BRCA1_r1.fastq ../files/BRCA1_r2.fastq -w ../pipeline/hg19/hg19 -d ../pipeline/resources/dbsnp/dbsnp_138.hg19.vcf -r ../pipeline/resources/genome/hg19.fa -a ../pipeline/Trimmomatic-0.36/adapters/NexteraPE-PE.fa -o ../files/BRCA1_pipeline_output
+bedtools bamtofastq -i output.bam -fq BRCA1_r1.fq -fq2 BRCA1_r2.fq
 ```
