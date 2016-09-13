@@ -1,7 +1,7 @@
 
 ##Week 3
 
-##Install bedtolls
+#Install bedtolls
 
 1.Download bedtools
 
