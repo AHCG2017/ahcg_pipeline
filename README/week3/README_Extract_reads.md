@@ -24,6 +24,6 @@ samtools view -L BRCA1.bed -b -o output.bam NA12878.bam
 4.Use bedtools to convert the bam file to a fastq file (We now extract the reads aligning to the region).
 
 ```{sh}
-bedtools bamtofastq -i output.bam -fq BRCA1_r1.fastq -fq2 BRCA1_r2.fastq
+bedtools bamtofastq -i output.bam -fq BRCA1_r1.fq -fq2 BRCA1_r2.fq
 ```
 
