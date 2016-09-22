@@ -4,7 +4,7 @@
 
 ###Otogenetics database
 
-![myimage-alt-tag](http://www.otogenetics.com/forms/Breast_Cancer_gene_list.pdf "Otogenetics")
+![myimage-alt-tag](https://github.com/Korchmaros/ahcg_pipeline/blob/master/resources/otogenetics.png  "Otogenetics")
 
 ####Create a BED file with the exome regions from all the genes in the database.
 1.Grab the data from the reference genome (hg19_refGene.txt) and save it on a TXT file.
