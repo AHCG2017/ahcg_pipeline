@@ -24,5 +24,5 @@ chr '\t'  seq start '\t'  seq end
 python split_colomns.py ../files/otogenetics.txt > ../files/otogenetics.bed
 ```
 
-3.Add 20 bp at the begging and end of each exome 
+3.Add 20 bp at the begging and the end of each exome 
 
