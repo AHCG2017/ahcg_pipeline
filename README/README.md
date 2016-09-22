@@ -24,8 +24,5 @@ chr '\t'  seq start '\t'  seq end
 python split_colomns.py ../files/otogenetics.txt > ../files/otogenetics.bed
 ```
 
-3.Generate the VCF file from the BED file
+3.Add 20 bp at the begging and end of each exome 
 
-```{sh}
-bedtools intersect -wb -a otogenetics.bed -b variants.vcf > otogenetics.vcf
-```
