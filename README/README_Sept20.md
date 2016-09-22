@@ -21,7 +21,7 @@ chr '\t'  seq start '\t'  seq end
 
 
  ```{sh} 
-python split_colomns.py ../files/otogenetics.txt > ../files/otogenetics_lines.txt
+python split_colomns.py ../files/otogenetics.txt > ../files/otogenetics.bed
 ```
  
 4.Generate the VCF file from the BED file
