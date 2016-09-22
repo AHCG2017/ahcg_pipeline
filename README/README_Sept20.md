@@ -24,7 +24,7 @@ chr '\t'  seq start '\t'  seq end
 python split_colomns.py ../files/otogenetics.txt > ../files/otogenetics.bed
 ```
  
-4.Generate the VCF file from the BED file
+3.Generate the VCF file from the BED file
  
 ```{sh}
 bedtools intersect -wb -a otogenetics.bed -b variants.vcf > otogenetics.vcf
