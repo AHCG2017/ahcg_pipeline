@@ -11,8 +11,8 @@ with open(sys.argv[1], 'r') as f:
         	tmp_list = []
 		tmp_list.append(list[1]+"\t")
         	tmp_list.append(list[2]+"\t")
-        	tmp_list.append(start_exons[item]+"\t")
-        	tmp_list.append(end_exons[item]+"\t")
+        	tmp_list.append(str(int(start_exons[item])-20)+"\t")
+        	tmp_list.append(str(int(end_exons[item])+20)+"\t")
         	tmp_list.append(list[8]+"\t")
 		tmp_list.append(list[3])
         	final_list.append(tmp_list)

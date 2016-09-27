@@ -9,12 +9,9 @@ with open(sys.argv[1], 'r') as f:
     	final_list = []
     	for item in xrange(0,len(start_exons)-1):
         	tmp_list = []
-		tmp_list.append(list[1]+"\t")
-        	tmp_list.append(list[2]+"\t")
+        	tmp_list.append(list[2][3:]+"\t")
         	tmp_list.append(start_exons[item]+"\t")
         	tmp_list.append(end_exons[item]+"\t")
-        	tmp_list.append(list[8]+"\t")
-		tmp_list.append(list[3])
         	final_list.append(tmp_list)
     	for row in final_list:
         	for col in row:
