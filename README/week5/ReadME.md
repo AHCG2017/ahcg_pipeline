@@ -26,4 +26,9 @@ python split_colomns.py ../files/otogenetics.txt > ../files/otogenetics.bed
 
 3.Add 20 bp at the begging and the end of each exome 
 
+```{sh} 
+python split_colomns_bu.py ../files/otogenetics.txt > ../files/otogenetics_extrema.bed
+```
+
+
 
