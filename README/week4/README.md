@@ -51,7 +51,7 @@ python3 ahcg_pipeline.py -t ../pipeline/Trimmomatic-0.36/trimmomatic-0.36.jar -b
 
 #### variants.vcf shasum number: 00ab164b17f1b5150a59e7fa9c5b3f9797aac73a
 
-#Find variants in common between the ones we found with the pipeline and the one from Genome in a Bottle project. 
+#Find variants in common between pipeline and Genome in a Bottle project. 
 
 1.Go to the repository folder
 
