@@ -29,8 +29,11 @@ bedtools intersect -wb -a nexterarapidcapture_exome_targetedregions.bed -b varia
 wget NA12878_GIAB_highconf_CG-IllFB-IllGATKHC-Ion-Solid-10X_CHROM1-X_v3.3_highconf.vcf.gz
 gunzip NA12878_GIAB_highconf_CG-IllFB-IllGATKHC-Ion-Solid-10X_CHROM1-X_v3.3_highconf.vcf.gz
 ```
-6.Write a python script to remove 'chr' from variants.vcf and save in exome_variants1.vcf
+6.Run a python script (split_colomns_no_chr.py) to remove 'chr' from variants.vcf and save in exome_variants1.vcf
 
+```{sh}
+python split_colomns_no_chr.py ../files/variants.vcf > ../files/exome_variants1.vcf
+```
 7.Safe the common and not common variants in a file. When you see a '.' this means that the variant is not in common.
 
 ```{sh}
