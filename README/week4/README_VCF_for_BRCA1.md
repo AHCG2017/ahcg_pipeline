@@ -16,7 +16,7 @@ rm reads_B1_27000x150bp_0S_0I_0D_0U_0N_1.fq.gz
 rm reads_B1_27000x150bp_0S_0I_0D_0U_0N_2.fq.gz 
 ```
 
-2.Download the regerence genome
+2.Download the reference genome
 
 ```{sh}
 cd files 
